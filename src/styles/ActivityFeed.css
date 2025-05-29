@@ -1,0 +1,82 @@
+.activity-feed {
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    max-width: 100%;
+  }
+  
+  .activity-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .activity-header h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+  }
+  
+  .appointments-count {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .activity-graph {
+    overflow-x: auto;
+    padding-bottom: 16px;
+  }
+  
+  .graph-bars {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-width: 600px;
+  }
+  
+  .day-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .bar-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 14px;
+    height: 160px;
+  }
+  
+  .bar {
+    width: 12px;
+    border-radius: 6px;
+    position: relative;
+    transition: height 0.3s ease;
+  }
+  
+  /* Split bar container */
+  .split-bar {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 2px; /* Space between segments */
+  }
+  
+  /* Each segment inside split bar */
+  .bar-segment {
+    height: 100%;
+    border-radius: 6px;
+  }
+    
+  /* Day label */
+  .day-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+  }

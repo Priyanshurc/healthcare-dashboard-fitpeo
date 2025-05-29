@@ -1,0 +1,28 @@
+/* Make entire layout full-screen with no overflow */
+.dashboard-layout {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; /* ✅ This removes scrollbars */
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Main content area should also avoid overflow */
+  .dashboard-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* ✅ Prevent inner scroll */
+  }
+  
+  /* Optional: If you want inner scroll on content only */
+  .dashboard-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  /* Optional scrollbar hiding */
+  .dashboard-main::-webkit-scrollbar {
+    width: 0;
+  }
+  
